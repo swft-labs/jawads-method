@@ -10,9 +10,10 @@ import { motion } from "framer-motion";
 export const LogoTicker = () => {
   // Define dimensions for each logo
   const logoDimensions = {
-    stanford: { width: 270, height: 130 }, // Custom size for Stanford logo
-    nih: { width: 280, height: 160 }, // Custom size for NIH logo
-    mnt: { width: 300, height: 20 }, // Custom size for MNT logo
+    stanford: { width: "w-32", height: 130 }, // Tailwind width class for Stanford logo
+    usc: { width: "w-28", height: 100 },
+    nih: { width: "w-36", height: 160 }, 
+    mnt: { width: "w-40", height: 20 }, 
   };
 
   return (
@@ -41,54 +42,43 @@ export const LogoTicker = () => {
             <Image
               src={stanford}
               alt="Stanford Logo"
-              width={logoDimensions.stanford.width}
-              height={logoDimensions.stanford.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.stanford.width}`}
             />
             <Image
               src={usc}
               alt="USC Logo"
-              style={{ objectFit: "fill" }} // Forces the image to stretch
+              className={`logo-ticker-image ${logoDimensions.usc.width}`}
             />
             <Image
               src={nih}
               alt="NIH Logo"
-              width={logoDimensions.nih.width}
-              height={logoDimensions.nih.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.nih.width}`}
             />
             <Image
               src={mnt}
               alt="MNT Logo"
-              width={logoDimensions.mnt.width}
-              height={logoDimensions.mnt.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.mnt.width}`}
             />
+            {/* Repeating Logos */}
             <Image
               src={stanford}
               alt="Stanford Logo"
-              width={logoDimensions.stanford.width}
-              height={logoDimensions.stanford.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.stanford.width}`}
             />
             <Image
               src={usc}
               alt="USC Logo"
-              style={{ objectFit: "fill" }} // Forces the image to stretch
+              className={`logo-ticker-image ${logoDimensions.usc.width}`}
             />
             <Image
               src={nih}
               alt="NIH Logo"
-              width={logoDimensions.nih.width}
-              height={logoDimensions.nih.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.nih.width}`}
             />
             <Image
               src={mnt}
               alt="MNT Logo"
-              width={logoDimensions.mnt.width}
-              height={logoDimensions.mnt.height}
-              className="logo-ticker-image"
+              className={`logo-ticker-image ${logoDimensions.mnt.width}`}
             />
           </motion.div>
         </div>
