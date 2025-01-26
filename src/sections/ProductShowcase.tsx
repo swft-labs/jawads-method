@@ -101,21 +101,39 @@ const ProductShowcase: React.FC = () => (
         />
       </div>
       {/* Large Card */}
-      <div className="bg-black bg-opacity-15 border border-[#333] rounded-3xl shadow-md hover:shadow-xl transition-all my-12 p-8 text-center mx-auto max-w-4xl flex flex-col items-center gap-6">
-        <h3 className="text-4xl font-bold text-white">
+      <div className="bg-black bg-opacity-20 border border-[#333] rounded-3xl shadow-lg hover:shadow-2xl transition-all my-12 p-8 text-center mx-auto max-w-4xl flex flex-col items-center gap-6 relative overflow-hidden">
+        <h3 className="text-3xl md:text-4xl font-extrabold text-white">
           JOIN <span className="text-red-500">5,000 STUDENTS</span> TODAY FOR JUST
         </h3>
         <div className="flex items-center justify-center gap-4">
-          <span className="text-red-500 line-through text-4xl">$59.99</span>
-          <span className="text-green-400 glow-text text-6xl" style={{ "--glow-color": "#66FF66" }}>
+          <span
+            className="text-red-900 line-through text-3xl md:text-4xl relative"
+            style={{
+              textDecorationColor: "#EF4444", // Slightly more red for the line
+            }}
+          >
+            $59.99
+          </span>
+          <span
+            className="text-green-400 text-5xl md:text-6xl font-extrabold glow-text"
+            style={{ "--glow-color": "#66FF66" }}
+          >
             $29.99/mo
           </span>
         </div>
-        <BackgroundGradient className="rounded-full w-full max-w-sm">
-          <button className="px-8 py-4 text-lg md:text-xl font-semibold bg-transparent text-white w-full">
+        <BackgroundGradient className="rounded-full">
+          <button
+            className="inline-flex items-center justify-center px-10 py-2 sm:px-12 sm:py-2 text-lg sm:text-xl md:text-2xl font-semibold bg-transparent text-white leading-normal"
+            style={{ "--glow-color": "#FF6666" }}
+          >
             JOIN NOW
           </button>
         </BackgroundGradient>
+        
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 z-[-1]">
+          <BackgroundGradient />
+        </div>
       </div>
     </div>
   </div>
