@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import DiscordLogo from "@/assets/discord - Copy.png"; // Replace with the path to your Discord logo
@@ -56,7 +57,7 @@ const Footer: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="p-6 bg-black bg-opacity-30 border border-[#333] rounded-3xl shadow-md transition-all cursor-pointer"
+              className="p-6 bg-black bg-opacity-20 border border-[#333] rounded-3xl shadow-md transition-all cursor-pointer"
               onClick={() => toggleQuestion(index)}
             >
               <h3 className="text-xl font-bold text-white flex justify-between items-center">
@@ -77,24 +78,42 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Social Media and Call-to-Action */}
-      <div className="container mx-auto px-4">
-        {/* Social Media Icons */}
-        <div className="flex gap-4 justify-center mt-6">
-          <a href="https://discord.com/invite/jscommunity" className="text-white hover:text-red-500" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Discord">
-            <Image src={DiscordLogo} alt="Discord" width={24} height={24} />
+      {/* Redesigned Footer Card */}
+      <div className="bg-black bg-opacity-25 border border-[#333] rounded-3xl shadow-lg mx-auto max-w-5xl p-8">
+        <h2 className="text-3xl font-bold text-white text-center mb-4">
+          FOLLOW THE METHOD THAT <span className="text-red-500">EVERYONE</span> HAS BEEN LOOKING FOR
+        </h2>
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://discord.com/invite/jscommunity"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit us on Discord"
+            className="hover:opacity-80 transition"
+          >
+            <Image src={DiscordLogo} alt="Discord" width={48} height={48} />
           </a>
-          <a href="https://www.tiktok.com/@j.wdv" className="text-white hover:text-red-500" target="_blank" rel="noopener noreferrer" aria-label="Visit us on TikTok">
-            <Image src={TikTokLogo} alt="TikTok" width={24} height={24} />
+          <a
+            href="https://www.tiktok.com/@j.wdv"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit us on TikTok"
+            className="hover:opacity-80 transition"
+          >
+            <Image src={TikTokLogo} alt="TikTok" width={48} height={48} />
           </a>
-          <a href="https://www.instagram.com/1jwds" className="text-white hover:text-red-500" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram">
-            <Image src={InstagramLogo} alt="Instagram" width={24} height={24} />
+          <a
+            href="https://www.instagram.com/1jwds"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit us on Instagram"
+            className="hover:opacity-80 transition"
+          >
+            <Image src={InstagramLogo} alt="Instagram" width={48} height={48} />
           </a>
         </div>
-
-        {/* Footer Text */}
-        <p className="mt-6 text-center break-words px-4 text-white">
-          &copy; Jawad's Method. All rights reserved.
+        <p className="mt-6 text-center text-gray-300">
+          &copy; 2025 Jawad's Method. All rights reserved.
         </p>
       </div>
     </footer>
