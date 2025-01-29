@@ -32,78 +32,78 @@ export const LogoTicker = () => {
             }}
           >
             {/* First set of logos */}
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={stanford}
                 alt="Stanford Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={usc}
                 alt="USC Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={nih}
                 alt="NIH Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={mnt}
                 alt="MNT Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
             
             {/* Repeated set of logos */}
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={stanford}
                 alt="Stanford Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={usc}
                 alt="USC Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={nih}
                 alt="NIH Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
-            <div className="h-16 w-32 relative">
+            <div className="h-20 w-40 relative">
               <Image
                 src={mnt}
                 alt="MNT Logo"
                 className="object-contain"
                 fill
-                sizes="128px"
+                sizes="160px"
               />
             </div>
           </motion.div>
