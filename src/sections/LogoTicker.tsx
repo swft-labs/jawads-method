@@ -8,14 +8,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export const LogoTicker = () => {
-  // Define dimensions for each logo
-  const logoDimensions = {
-    stanford: { width: "w-32", height: 130 }, // Tailwind width class for Stanford logo
-    usc: { width: "w-28", height: 100 },
-    nih: { width: "w-36", height: 160 }, 
-    mnt: { width: "w-40", height: 20 }, 
-  };
-
   return (
     <div className="py-16 md:py-20 bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616] backdrop-blur-sm">
       <div className="container">
@@ -28,7 +20,7 @@ export const LogoTicker = () => {
 
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
-            className="flex gap-14 flex-none pr-14"
+            className="flex items-center gap-14 flex-none pr-14"
             animate={{
               translateX: "-50%",
             }}
@@ -39,47 +31,81 @@ export const LogoTicker = () => {
               repeatType: "loop",
             }}
           >
-            <Image
-              src={stanford}
-              alt="Stanford Logo"
-              className={`logo-ticker-image ${logoDimensions.stanford.width}`}
-            />
-            <Image
-              src={usc}
-              alt="USC Logo"
-              className={`logo-ticker-image ${logoDimensions.usc.width}`}
-            />
-            <Image
-              src={nih}
-              alt="NIH Logo"
-              className={`logo-ticker-image ${logoDimensions.nih.width}`}
-            />
-            <Image
-              src={mnt}
-              alt="MNT Logo"
-              className={`logo-ticker-image ${logoDimensions.mnt.width}`}
-            />
-            {/* Repeating Logos */}
-            <Image
-              src={stanford}
-              alt="Stanford Logo"
-              className={`logo-ticker-image ${logoDimensions.stanford.width}`}
-            />
-            <Image
-              src={usc}
-              alt="USC Logo"
-              className={`logo-ticker-image ${logoDimensions.usc.width}`}
-            />
-            <Image
-              src={nih}
-              alt="NIH Logo"
-              className={`logo-ticker-image ${logoDimensions.nih.width}`}
-            />
-            <Image
-              src={mnt}
-              alt="MNT Logo"
-              className={`logo-ticker-image ${logoDimensions.mnt.width}`}
-            />
+            {/* First set of logos */}
+            <div className="h-16 w-32 relative">
+              <Image
+                src={stanford}
+                alt="Stanford Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={usc}
+                alt="USC Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={nih}
+                alt="NIH Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={mnt}
+                alt="MNT Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            
+            {/* Repeated set of logos */}
+            <div className="h-16 w-32 relative">
+              <Image
+                src={stanford}
+                alt="Stanford Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={usc}
+                alt="USC Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={nih}
+                alt="NIH Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
+            <div className="h-16 w-32 relative">
+              <Image
+                src={mnt}
+                alt="MNT Logo"
+                className="object-contain"
+                fill
+                sizes="128px"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
