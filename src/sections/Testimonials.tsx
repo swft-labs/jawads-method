@@ -82,7 +82,7 @@ export const Testimonials = () => {
           {/* Review 1 */}
           <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
             <p className="text-lg italic mb-4">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              "Very active community trying to help you with you looksmaxxing journey, I received some very precious tips."
             </p>
             <div className="flex items-center justify-between">
               <div>
@@ -100,7 +100,7 @@ export const Testimonials = () => {
           {/* Review 2 */}
           <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
             <p className="text-lg italic mb-4">
-              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "It’s great! Custom plans, daily progress tracking, face analysis, the jawad methods guide and asking Jawad for tips for a reasonable price. That’s awesome value, face analysis alone is worth more than $50+ on other programs so this helped me save money and always being guided towards a glow up everyday makes me feel more comfortable, I’ve already seen some great results 😍"
             </p>
             <div className="flex items-center justify-between">
               <div>
@@ -118,7 +118,7 @@ export const Testimonials = () => {
           {/* Review 3 */}
           <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
             <p className="text-lg italic mb-4">
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              "Jawad is a great guy, helped me a bunch with my hair routine and looked over my skincare he is really there for his community and looks out for everyone so I appreciate all the help!"
             </p>
             <div className="flex items-center justify-between">
               <div>
