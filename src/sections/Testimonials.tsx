@@ -56,8 +56,8 @@ export const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonial 3 - Hidden in tablet view, visible in mobile and large screens */}
-          <div className="flex flex-col items-center max-w-xs sm:flex lg:flex hidden md:hidden">
+          {/* Testimonial 3 - Hidden in tablet view */}
+          <div className="flex flex-col items-center max-w-xs hidden md:hidden lg:flex">
             <div className="p-4 border rounded-3xl dark:bg-neutral-900 bg-neutral-100 border-neutral-200 dark:border-neutral-800">
               <Compare
                 firstImage={before3}
@@ -72,6 +72,65 @@ export const Testimonials = () => {
               This is the best thing that happened in my life and I will never
               forget it
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Reviews Section */}
+      <div className="py-12 px-4 bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Review 1 */}
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
+            <p className="text-lg italic mb-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-xl glow-white">Gosha Miller</p>
+                <p className="text-sm text-gray-400">Verified Customer</p>
+              </div>
+              <div className="flex gap-1">
+                {Array(5).fill(0).map((_, i) => (
+                  <span key={i} className="text-yellow-500">★</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Review 2 */}
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
+            <p className="text-lg italic mb-4">
+              "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            </p>
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-xl glow-white">BowlOfCereal</p>
+                <p className="text-sm text-gray-400">Verified Customer</p>
+              </div>
+              <div className="flex gap-1">
+                {Array(5).fill(0).map((_, i) => (
+                  <span key={i} className="text-yellow-500">★</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Review 3 */}
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
+            <p className="text-lg italic mb-4">
+              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            </p>
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="font-bold text-xl glow-white">Frosty</p>
+                <p className="text-sm text-gray-400">Verified Customer</p>
+              </div>
+              <div className="flex gap-1">
+                {Array(5).fill(0).map((_, i) => (
+                  <span key={i} className="text-yellow-500">★</span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
