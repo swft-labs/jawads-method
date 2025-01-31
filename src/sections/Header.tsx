@@ -31,16 +31,13 @@ export const Header = () => {
                   BENEFITS
                 </a>
                 <a href="#" className="hover:text-white transition">
+                  TRANSFORMATIONS
+                </a>
+                <a href="#" className="hover:text-white transition">
                   FAQ
                 </a>
                 <a href="#" className="hover:text-white transition">
                   SOCIALS
-                </a>
-                <a href="#" className="hover:text-white transition">
-                  DISCORD
-                </a>
-                <a href="#" className="hover:text-white transition">
-                  CONTACT
                 </a>
                 <button className="get-access-btn whitespace-nowrap px-4 py-2">
                   GET ACCESS
@@ -87,7 +84,7 @@ export const Header = () => {
             {/* Reduced padding */}
             <h1 className="text-[#e4e4e4] text-3xl sm:text-4xl md:text-6xl font-extrabold mb-6 leading-snug max-w-full text-center">
               REACH YOUR POTENTIAL USING{" "}
-              <span className="block text-white text-4xl sm:text-5xl md:text-7xl font-extrabold mt-6 glow-text">
+              <span className="block text-white text-6xl sm:text-7xl md:text-9xl font-extrabold mt-6 glow-text">
                 THE METHOD
               </span>
             </h1>
