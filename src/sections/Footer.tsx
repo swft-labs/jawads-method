@@ -18,31 +18,31 @@ const Footer: React.FC = () => {
   const faqs = [
     {
       question: "Does THE METHOD guarantee results?",
-      answer: "Results vary by individual, but consistent application increases success.",
+      answer: "YES, if you’re consistent. Regular commitment leads to gradual improvements, enhancing your appearance effectively. Remain committed for the greatest result!",
     },
     {
       question: "Can I talk to Jawad if I have THE METHOD?",
-      answer: "Yes, you can schedule exclusive one-on-one calls with Jawad.",
+      answer: "Yes, you can! Jawad is available to answer questions and schedules at least one call with you to provide support.",
     },
     {
       question: "I am done with puberty. Can I still get a glow up?",
-      answer: "Absolutely! THE METHOD is designed for all stages of life.",
+      answer: "Yes, we can change anyone’s appearance no matter what age they are.",
     },
     {
       question: "If I'm a girl, would I benefit from THE METHOD?",
-      answer: "Yes, THE METHOD is inclusive and tailored for everyone.",
+      answer: "Yes, it has no gender. We are currently giving many girls the glow up of their lives.",
     },
     {
       question: "Can't I just Google all the things in THE METHOD?",
-      answer: "THE METHOD includes exclusive insights you won’t find online.",
+      answer: "We have compiled all the necessary web information on our server to save you time researching. Feel free to utilize this resource along with personalized advice from our experts, who are available to answer all your questions.",
     },
     {
       question: "Do you offer refunds?",
-      answer: "Refunds are not offered, but we provide extensive support.",
+      answer: "Yes, we offer refunds if you didn’t get the desired results or didn’t like the method, but only within the first 24 hours of the purchase.",
     },
     {
       question: "Do I get to keep THE METHOD forever?",
-      answer: "Yes, once purchased, it’s yours for life.",
+      answer: "The method is a subscription that provides access to the Ultimate E-book, calls with Jawad, and discussions with influencers and fellow moggers. When the subscription ends, you lose access to the calls and discussions, but still have access to your notes of the book.",
     },
   ];
 
