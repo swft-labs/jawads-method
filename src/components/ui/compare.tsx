@@ -4,14 +4,14 @@ import { SparklesCore } from "./sparkles";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { IconDotsVertical } from "@tabler/icons-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface CompareProps {
-  firstImage?: string;
-  secondImage?: string;
+  firstImage?: string | StaticImageData;
+  secondImage?: string | StaticImageData;
   className?: string;
   firstImageClassName?: string;
-  secondImageClassname?: string;
+  secondImageClassName?: string;
   initialSliderPercentage?: number;
   slideMode?: "hover" | "drag";
   showHandlebar?: boolean;
@@ -23,7 +23,7 @@ export const Compare = ({
   secondImage = "",
   className,
   firstImageClassName,
-  secondImageClassname,
+  secondImageClassName,
   initialSliderPercentage = 50,
   slideMode = "hover",
   showHandlebar = true,
@@ -226,7 +226,7 @@ export const Compare = ({
         <motion.div
           className={cn(
             "absolute top-0 left-0 z-[19] rounded-2xl w-full h-full select-none",
-            secondImageClassname
+            secondImageClassName
           )}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import personImage from "@/assets/person.png";
 import mic from "@/assets/mic.png";
 import star from "@/assets/star.png";
@@ -10,7 +10,7 @@ import book from "@/assets/book.png";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 interface CardProps {
-  image?: string;
+  image?: string | StaticImageData;
   title: JSX.Element;
   description: string;
 }
