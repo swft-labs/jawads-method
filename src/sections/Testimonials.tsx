@@ -14,9 +14,9 @@ import after3 from "@/assets/after3.png";
 
 export const Testimonials = () => {
   return (
-    <div className="bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616] text-white relative z-10 pb-16"> 
-      <div className="py-12"> 
-        <h2 className="text-center text-3xl md:text-5xl font-bold mb-12">
+    <div id="transformations" className="bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616] text-white relative z-10 pb-8 sm:pb-16"> 
+      <div className="py-8 sm:py-12"> 
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 text-center px-4">
           DON'T BELIEVE ME? <br />
           LOOK AT THESE{" "}
           <span className="text-red-500">TRANSFORMATIONS</span>
@@ -80,14 +80,16 @@ export const Testimonials = () => {
       <div className="py-12 px-4 bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Review 1 */}
-          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
-            <p className="text-lg italic mb-4">
-              "Very active community trying to help you with you looksmaxxing journey, I received some very precious tips."
-            </p>
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800 flex flex-col min-h-[250px] sm:min-h-[300px]">
+            <div className="flex-grow flex items-center justify-center">
+              <p className="text-base sm:text-lg italic text-center px-2 sm:px-4">
+                "Very active community trying to help you with you looksmaxxing journey, I received some very precious tips."
+              </p>
+            </div>
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-bold text-xl glow-white">Gosha Miller</p>
-                <p className="text-sm text-gray-400">Verified Customer</p>
+                <p className="font-bold text-lg sm:text-xl glow-white">Gosha Miller</p>
+                <p className="text-xs sm:text-sm text-gray-400">Verified Customer</p>
               </div>
               <div className="flex gap-1">
                 {Array(5).fill(0).map((_, i) => (
@@ -98,14 +100,16 @@ export const Testimonials = () => {
           </div>
 
           {/* Review 2 */}
-          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
-            <p className="text-lg italic mb-4">
-              "It’s great! Custom plans, daily progress tracking, face analysis, the jawad methods guide and asking Jawad for tips for a reasonable price. That’s awesome value, face analysis alone is worth more than $50+ on other programs so this helped me save money and always being guided towards a glow up everyday makes me feel more comfortable, I’ve already seen some great results 😍"
-            </p>
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800 flex flex-col min-h-[250px] sm:min-h-[300px]">
+            <div className="flex-grow flex items-center justify-center">
+              <p className="text-base sm:text-lg italic text-center px-2 sm:px-4">
+                "It's great! Custom plans, daily progress tracking, face analysis, the jawad methods guide and asking Jawad for tips for a reasonable price. That's awesome value, face analysis alone is worth more than $50+ on other programs so this helped me save money and always being guided towards a glow up everyday makes me feel more comfortable, I've already seen some great results 😍"
+              </p>
+            </div>
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-bold text-xl glow-white">BowlOfCereal</p>
-                <p className="text-sm text-gray-400">Verified Customer</p>
+                <p className="font-bold text-lg sm:text-xl glow-white">BowlOfCereal</p>
+                <p className="text-xs sm:text-sm text-gray-400">Verified Customer</p>
               </div>
               <div className="flex gap-1">
                 {Array(5).fill(0).map((_, i) => (
@@ -116,14 +120,16 @@ export const Testimonials = () => {
           </div>
 
           {/* Review 3 */}
-          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800">
-            <p className="text-lg italic mb-4">
-              "Jawad is a great guy, helped me a bunch with my hair routine and looked over my skincare he is really there for his community and looks out for everyone so I appreciate all the help!"
-            </p>
+          <div className="p-6 bg-[#221616] rounded-3xl shadow-md border border-neutral-800 flex flex-col min-h-[250px] sm:min-h-[300px]">
+            <div className="flex-grow flex items-center justify-center">
+              <p className="text-base sm:text-lg italic text-center px-2 sm:px-4">
+                "Jawad is a great guy, helped me a bunch with my hair routine and looked over my skincare he is really there for his community and looks out for everyone so I appreciate all the help!"
+              </p>
+            </div>
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-bold text-xl glow-white">Frosty</p>
-                <p className="text-sm text-gray-400">Verified Customer</p>
+                <p className="font-bold text-lg sm:text-xl glow-white">Frosty</p>
+                <p className="text-xs sm:text-sm text-gray-400">Verified Customer</p>
               </div>
               <div className="flex gap-1">
                 {Array(5).fill(0).map((_, i) => (

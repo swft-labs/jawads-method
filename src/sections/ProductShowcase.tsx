@@ -28,7 +28,7 @@ const Card: React.FC<CardProps> = ({ image, title, description }) => (
         />
       </div>
     )}
-    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 transition-all group-hover:pt-2 text-center">
+    <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-4 transition-all group-hover:pt-2 text-center">
       {title}
     </h3>
     <div className="opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out transform px-4 py-2 text-center">
@@ -41,9 +41,9 @@ const Card: React.FC<CardProps> = ({ image, title, description }) => (
 );
 
 const ProductShowcase: React.FC = () => (
-  <div className="bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616] py-12 md:py-16 px-4 sm:px-8">
+  <div id="benefits" className="bg-gradient-to-r from-[#221616] via-[#0e0c0c] to-[#221616] py-8 sm:py-12 md:py-16 px-4 sm:px-8">
     <div className="container mx-auto text-center">
-      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8">
         PURCHASE <span className="text-red-500">JAWAD'S METHOD</span> AND GET
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -80,20 +80,19 @@ const ProductShowcase: React.FC = () => (
       </div>
       
       {/* Large Card */}
-      <div className="bg-black bg-opacity-20 border border-[#333] rounded-3xl shadow-lg hover:shadow-2xl transition-all my-12 p-6 sm:p-8 text-center mx-auto max-w-4xl flex flex-col items-center gap-6 relative overflow-hidden">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
-          JOIN <span className="text-red-500">5,000 STUDENTS</span> TODAY FOR JUST
-        </h3>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-          <span
-            className="text-red-900 line-through text-2xl sm:text-3xl md:text-4xl"
-            style={{ textDecorationColor: "#EF4444" }}
-          >
-            $59.99
-          </span>
-          <span className="text-green-400 text-4xl sm:text-3xl md:text-6xl font-extrabold">
-            $29.99/mo
-          </span>
+      <div className="bg-black bg-opacity-20 border border-[#333] rounded-3xl shadow-lg hover:shadow-2xl transition-all my-8 sm:my-12 p-4 sm:p-6 md:p-8 text-center mx-auto max-w-4xl">
+        <div className="sm:mb-4">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">
+            JOIN <span className="text-red-500">5,000 STUDENTS</span> TODAY FOR JUST
+          </h3>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-4">
+            <span className="text-red-900 line-through text-xl sm:text-2xl md:text-3xl">
+              $59.99
+            </span>
+            <span className="text-green-400 text-3xl sm:text-4xl md:text-5xl font-extrabold">
+              $29.99/mo
+            </span>
+          </div>
         </div>
         <BackgroundGradient className="rounded-full">
           <button className="inline-flex items-center justify-center px-8 py-3 sm:px-12 sm:py-3 text-lg sm:text-xl md:text-2xl font-semibold bg-transparent text-white">
